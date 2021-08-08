@@ -13,8 +13,6 @@ const App = () => {
         password: "mestre",
       },
     })
-
-  //ate aqui esta certo..
     setClientes( response.data );      
   }
 
@@ -27,9 +25,11 @@ const App = () => {
         <h1>Listar os clientes</h1>
         {clientes.map(cliente => {
           return (
-            // agora foi...
-            // obrigado.
             <li key={cliente.cliCodigo}>
+              <h2>
+                <strong>Código: </strong>
+                {cliente.cliCodigo}
+              </h2>
               <h2>
                 <strong>Nome: </strong>
                 {cliente.cliNome}
