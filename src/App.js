@@ -9,8 +9,8 @@ const App = () => {
 
     const response = await api.get('', {
       auth: {
-        username: "mestre",
-        password: "mestre",
+        username: "usuario",
+        password: "senha",
       },
     })
     setClientes( response.data );      
@@ -44,6 +44,5 @@ const App = () => {
     </div>
   )
 }
-
 
 export default App;
